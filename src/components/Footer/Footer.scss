@@ -1,0 +1,43 @@
+footer {
+    padding: 50px 0 30px 0;
+    background: #2E3239;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            p {
+                font-size: 12px;
+                color: #A2B2EE;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 12px;
+                color: #4F7ADB;
+
+                i {
+                    color: #4F7ADB;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 990px) {
+    footer {
+        padding: 50px 0 10px 0;
+
+        .container {
+            flex-direction: column;
+        }
+    }
+}

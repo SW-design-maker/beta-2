@@ -1,0 +1,231 @@
+.shop_add {
+    padding: 80px 0 50px 0;
+    background: #2E3239;
+
+    .container {
+        h1 {
+            font-size: 40px;
+            color: #a2b2ee;
+        }
+
+        .card_all {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                width: 100%;
+
+                .card {
+                    box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.18);
+                    width: 40%;
+                    height: max-content;
+
+                    img {
+                        object-fit: cover;
+                        margin: 0 0 15px;
+                        height: auto;
+                    }
+
+                    .text {
+                        .desc {
+                            padding: 10px 0 10px 0;
+                        }
+
+                        b {
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+
+                            button {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+                                padding: 2px 10px;
+                                border: 1px solid #a2b2ee;
+                                color: #a2b2ee;
+                                background: #5F7ADB;
+                                border-radius: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right_all {
+                position: sticky;
+                top: 100px;
+                right: 0;
+                height: max-content;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .right_top {
+                    width: 500px;
+                    background: #a2b2ee;
+                    border-radius: 20px;
+                    padding: 20px 40px;
+                    border: 1px solid #5F7ADB;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    p {
+                        padding: 10px 0 0 0;
+                        color: #5F7ADB;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 5px 0 5px 20px;
+                        border: 1px solid #a2b2ee;
+                        outline: none;
+                        background: #fff;
+                        border-radius: 8px;
+                    }
+                }
+
+                .right_bottom {
+                    width: 500px;
+                    padding: 20px 40px;
+                    border: 1px solid #a2b2ee;
+                    border-radius: 20px;
+                    background: #a2b2ee;
+                    // z-index: -1;
+
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: #5F7ADB;
+                    }
+
+                    ul {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 0 0 0;
+
+                        li {
+                            color: #5F7ADB;
+                        }
+
+                        b {
+                            color: #a2b2ee;
+                            font-weight: 900;
+                        }
+                    }
+
+                    ul:nth-child(4) {
+                        border-top: 1px solid #5F7ADB;
+                        margin: 20px 0 0 0;
+                    }
+
+                    .send {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5px 0;
+                        background: #5F7ADB;
+                        color: #fff;
+                        border-radius: 20px;
+                        margin: 30px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 990px) {
+    .shop_add {
+        .container {
+            h1 {
+                font-size: 32px;
+            }
+
+            .card_all {
+                flex-wrap: wrap;
+                width: 100%;
+                row-gap: 3rem;
+
+                .left {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    gap: 0rem;
+                    row-gap: 5rem;
+
+                    .card {
+                        width: 45%;
+                    }
+                }
+
+                .right_all {
+                    width: 80%;
+                    margin: auto;
+
+                    .right_top {
+                        width: 100%;
+                    }
+
+                    .right_bottom {
+                        width: 100%;
+                        padding: 15px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 760px) {
+    .shop_add {
+        .container {
+            .card_all {
+                .left {
+                    row-gap: 3rem;
+                }
+
+                .right_all {
+                    margin: auto;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .shop_add {
+        padding: 80px 0 30px 0;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        .container {
+            .card_all {
+                flex-direction: column;
+                gap: 5rem;
+
+                .right_all {
+                    margin: 0;
+                    width: 100%;
+
+                    .right_top {
+                        width: 100%;
+                    }
+
+                    .right_bottom {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
