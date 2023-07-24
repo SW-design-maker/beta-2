@@ -220,6 +220,8 @@ nav {
                     }
 
                     .check2 {
+                        color: #5F7ADB;
+
                         ul {
                             display: none;
                         }
@@ -237,13 +239,13 @@ nav {
                             row-gap: 0;
                             top: 150%;
                             position: absolute;
-                            background: #fff;
+                            background: #5F7ADB;
                             box-shadow: 0px 0px 6px 7px rgba(103, 103, 103, 0.19);
                             padding: 5px 0;
                             border-radius: 8px;
                             left: 0;
                             z-index: 100;
-
+                            color: #A2B2EE;
                             p {
                                 padding: 5px 10px;
                                 width: 100%;
